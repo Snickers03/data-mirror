@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import clsx from "clsx";
 
+import Footer from "@/components/Footer";
+
 import "./globals.css";
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -18,7 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={clsx("px-2", rubik.className)}>{children}</body>
+      <body
+        className={clsx(
+          "flex min-h-screen w-full flex-col px-2",
+          rubik.className,
+        )}
+      >
+        <main className='flex-grow'>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
