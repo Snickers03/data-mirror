@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import clsx from "clsx";
 
 import Footer from "@/components/Footer";
@@ -29,6 +30,12 @@ export default function RootLayout({
         <main className='flex-grow'>{children}</main>
         <Footer />
       </body>
+      {process.env.NODE_ENV === "production" && (
+        <>
+          <GoogleAnalytics gaId='G-7L7HEC98LF' />
+          <GoogleTagManager gtmId='GTM-TTVTVQRL' />
+        </>
+      )}
     </html>
   );
 }
