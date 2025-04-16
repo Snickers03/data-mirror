@@ -1,7 +1,7 @@
 # Data Mirror
 
 <p align="center">
-  <img src="https://data-mirror.niklas.sh/_next/image?url=%2Flogo.png&w=96&q=75" alt="Data Mirror Logo" width="150" height="150"/>
+  <img src="https://data-mirror.niklas.sh/_next/image?url=%2Flogo-white.png&w=96&q=75" alt="Data Mirror Logo" width="150" height="150"/>
 </p>
 
 <p align="center">
