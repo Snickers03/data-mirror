@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className='mt-4 md:mt-10 lg:mt-20'>
       <Header />
-      <div className='mx-auto mt-4 grid w-fit grid-cols-1 gap-12 rounded-lg border-2 border-slate-100 bg-slate-100 p-8 shadow-lg md:grid-cols-2'>
+      <div className='mx-auto mt-4 grid w-fit grid-cols-1 gap-6 rounded-lg border-2 border-slate-100 bg-slate-100 p-8 shadow-lg'>
         <IpAndLocation />
         <DeviceAndBrowser />
       </div>

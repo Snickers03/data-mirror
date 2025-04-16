@@ -59,17 +59,19 @@ const DeviceAndBrowser = () => {
             alt='browser'
           />
         </div>
-        <InformationCard
-          label={device?.resolution}
-          path='/device/frame.png'
-          alt='frame'
-        />
-        <InformationCard
-          label={getBatteryStatus(battery)}
-          path='/device/battery-status.png'
-          alt='frame'
-          isCharging={battery?.charging}
-        />
+        <div className='grid grid-cols-2'>
+          <InformationCard
+            label={device?.resolution}
+            path='/device/frame.png'
+            alt='frame'
+          />
+          <InformationCard
+            label={getBatteryStatus(battery)}
+            path='/device/battery-status.png'
+            alt='frame'
+            isCharging={battery?.charging}
+          />
+        </div>
       </div>
     </div>
   );
